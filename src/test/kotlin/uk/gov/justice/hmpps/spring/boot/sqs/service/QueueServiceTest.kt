@@ -1,10 +1,10 @@
 package uk.gov.justice.hmpps.spring.boot.sqs.service
 
+import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.boot.test.context.SpringBootTest
-import org.assertj.core.api.Assertions.assertThat
 import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest(properties = ["dps.sqs.testProperty=test-property-value"])
 internal class QueueServiceTest {

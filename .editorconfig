@@ -1,0 +1,4 @@
+# This file is only specific to this project.
+# To change the template that is copied to dependent projects please see src/main/resources/.editorconfig
+[{*.kt,*.kts}]
+indent_size = 2
