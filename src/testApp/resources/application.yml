@@ -1,0 +1,3 @@
+dps:
+  sqs:
+    test-property: "Test Property Value"

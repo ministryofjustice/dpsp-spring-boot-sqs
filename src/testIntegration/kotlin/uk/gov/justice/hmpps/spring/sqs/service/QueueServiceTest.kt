@@ -1,4 +1,4 @@
-package uk.gov.justice.hmpps.spring.boot.sqs.service
+package uk.gov.justice.hmpps.spring.sqs.service
 
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test

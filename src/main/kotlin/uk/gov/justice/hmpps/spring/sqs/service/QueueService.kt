@@ -1,5 +1,6 @@
-package uk.gov.justice.hmpps.spring.boot.sqs.service
+package uk.gov.justice.hmpps.spring.sqs.service
 
+import org.slf4j.LoggerFactory
 import org.springframework.boot.context.properties.ConfigurationProperties
 import org.springframework.stereotype.Component
 import org.springframework.stereotype.Service
@@ -8,6 +9,14 @@ import org.springframework.stereotype.Service
 class QueueService(private val configurationProperties: QueueServiceProperties) {
   val testProperty
     get() = configurationProperties.testProperty
+
+  fun test() {
+    log.info(">>>> TEST with property=$testProperty >>>>")
+  }
+
+  companion object {
+    val log = LoggerFactory.getLogger(this::class.java)
+  }
 }
 
 @Component

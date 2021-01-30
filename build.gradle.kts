@@ -42,6 +42,7 @@ dependencies {
   implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
   testImplementation("org.springframework.boot:spring-boot-starter-test")
   testImplementation("org.assertj:assertj-core:3.18.1")
+  add("testAppImplementation", "org.springframework.boot:spring-boot-starter-web")
 }
 
 fun isNonStable(version: String): Boolean {
