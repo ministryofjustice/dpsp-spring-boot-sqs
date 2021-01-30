@@ -16,6 +16,13 @@ group = "uk.gov.justice.hmpps.spring.boot.sqs"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_11
 
+tasks.bootJar {
+  enabled = false
+}
+
+tasks.jar {
+  enabled = true
+}
 
 repositories {
   mavenLocal()
@@ -28,6 +35,7 @@ dependencies {
   implementation("org.jetbrains.kotlin:kotlin-reflect")
   implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
   testImplementation("org.springframework.boot:spring-boot-starter-test")
+  testImplementation("org.assertj:assertj-core:3.18.1")
 }
 
 fun isNonStable(version: String): Boolean {
