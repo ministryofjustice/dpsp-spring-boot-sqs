@@ -10,6 +10,7 @@ plugins {
   id("org.owasp.dependencycheck") version "6.0.4"
   id("com.adarshr.test-logger") version "2.1.1"
   id("org.jlleitschuh.gradle.ktlint") version "9.4.1"
+  id("org.unbroken-dome.test-sets") version "3.0.1"
 }
 
 group = "uk.gov.justice.hmpps.spring.boot.sqs"
@@ -22,6 +23,11 @@ tasks.bootJar {
 
 tasks.jar {
   enabled = true
+}
+
+testSets {
+  "testApp"()
+  "testIntegration"()
 }
 
 repositories {

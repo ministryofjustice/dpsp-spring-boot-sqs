@@ -1,6 +1,6 @@
 package uk.gov.justice.hmpps.spring.boot.sqs.service
 
-import org.assertj.core.api.Assertions.assertThat
+import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -14,7 +14,7 @@ internal class QueueServiceTest {
 
   @Test
   fun `context loads`() {
-    assertThat(queueService.testProperty).isEqualTo("test-property-value")
+    Assertions.assertThat(queueService.testProperty).isEqualTo("test-property-value")
   }
 
   @SpringBootApplication
