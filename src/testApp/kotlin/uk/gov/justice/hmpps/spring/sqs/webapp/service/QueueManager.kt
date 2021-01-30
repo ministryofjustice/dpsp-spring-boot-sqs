@@ -1,4 +1,4 @@
-package uk.gov.justice.hmpps.spring.sqs.test.app.service
+package uk.gov.justice.hmpps.spring.sqs.webapp.service
 
 import org.springframework.stereotype.Service
 import uk.gov.justice.hmpps.spring.sqs.service.QueueService
