@@ -19,5 +19,6 @@ class TestApplicationTest {
       .accept(MediaType.APPLICATION_JSON)
       .exchange()
       .expectStatus().isOk
+      .expectBody().jsonPath("$.value").isEqualTo("Test Property Value")
   }
 }

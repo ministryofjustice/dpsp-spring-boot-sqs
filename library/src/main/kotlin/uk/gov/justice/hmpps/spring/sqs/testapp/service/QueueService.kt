@@ -10,8 +10,9 @@ class QueueService(private val configurationProperties: QueueServiceProperties) 
   val testProperty
     get() = configurationProperties.testProperty
 
-  fun test() {
+  fun test(): String {
     log.info(">>>> TEST with property=$testProperty >>>>")
+    return testProperty
   }
 
   companion object {
